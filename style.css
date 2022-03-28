@@ -22,9 +22,18 @@ a{
 .descricao{
     margin: auto;
 }
-#descricaoMeusDados{
+#descricaoContatos{
     background-color: #ffffff72;
     border-radius: 20px;
+    animation: descricaoContatos 1s infinite alternate;
+}  
+@keyframes descricaoContatos {
+    from {
+        border-radius: 5px;
+    }
+    to {
+        border-radius: 20px;
+    }
 }
 .conteudoIcone{
     display: flex;
@@ -108,7 +117,7 @@ h2{
     padding: 13px 35px;
 
 }
-#linkMeusDados{
+#linkContatos{
     background-color: #ffffff00;
     /* color: #ffffff; */
     color: #673826;
