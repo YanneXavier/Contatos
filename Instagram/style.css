@@ -25,7 +25,7 @@ a{
 #descricaoContatos{
     background-color: #ffffff72;
     animation: descricaoContatos 1s infinite alternate;
-}  
+}
 @keyframes descricaoContatos {
     from {
         border-radius: 5px;
@@ -95,7 +95,7 @@ h2{
     margin: 5px auto;
     padding: 15px 30px;
     background-color: #ffffff72;
-    border-radius:  50px;
+    border-radius: 50px;
     color: #673826;
     font-size: 16px;
     font-weight: bolder;
@@ -110,11 +110,10 @@ h2{
     font-weight: bolder;
 }
 
-.link:hover,.link:focus {
+.link:hover{
     background-color: #ffffff;
     font-size: 19px;
     padding: 13px 35px;
-
 }
 #linkContatos{
     background-color: #ffffff00;
