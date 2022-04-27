@@ -25,6 +25,7 @@ a{
 #descricaoContatos{
     position: relative;
     background-color: #ffffff72;
+    border-radius: 5px;
 }
 #descricaoContatos::before, #descricaoContatos::after{
     content: "";
