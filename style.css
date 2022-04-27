@@ -22,17 +22,41 @@ a{
 .descricao{
     margin: auto;
 }
+
 #descricaoContatos{
+    position: relative;
     background-color: #ffffff72;
-    border-radius: 20px;
-    animation: descricaoContatos 1s infinite alternate;
-}  
-@keyframes descricaoContatos {
-    from {
-        border-radius: 5px;
+}
+
+#descricaoContatos::before, #descricaoContatos::after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 2px solid #ffffff;
+    transition: all .5s;
+    animation: clippath 3s infinite linear;
+    border-radius: 10px; 
+}
+#descricaoContatos::after {
+    animation: clippath 3s infinite -1.5s linear;
+}
+
+@keyframes clippath {
+    0%,
+    100% {
+        clip-path: inset(0 0 0 98% );
     }
-    to {
-        border-radius: 20px;
+    25% {
+        clip-path: inset(98% 0 0 0);
+    }
+    50% {
+        clip-path: inset(0 98%  0 0);
+    }
+    75% {
+        clip-path: inset(0 0 98% 0);
     }
 }
 .conteudoIcone{
@@ -157,21 +181,20 @@ h2{
 }
 
 
+
 .botaoVoltar{
-    color: #673826;
     background-color: #EBD46A;
-    padding: 10px;
     font-size: 20px;
     position: absolute;
     border-radius: 0px 0px 10px 0px;
     animation: botaoVOltar 1s infinite alternate;
+    padding: 10px;
 }  
 @keyframes botaoVOltar {
     from {
-        transform:translateX(0) scale(1.0);
+        color: #673826;
     }
     to {
-        transform:translateX(0) scale(1.2);
-        background-color: #EBD46A;
+        color: #ffffff;
     }
 }
